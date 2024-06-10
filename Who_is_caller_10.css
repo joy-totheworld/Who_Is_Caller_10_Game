@@ -18,6 +18,10 @@
   .navigation a:hover {
     text-decoration: underline;
   }
+
+  .header-image-container {
+    font-size: 8px;
+  }
   
   .calling-avatar {
     color: #637750;
@@ -43,7 +47,8 @@
   }
   
   #posts{
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -56,10 +61,13 @@
   .post {
     display: inline-block;
     vertical-align: top;
-    height: 150px;
+    height: 110px;
     width: 100px;
     margin: 10px 25px 25px;
-    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 5px;
     border: 1px solid #dadada;
     /* border-radius: 30px; */
     /* background-color: rgb(195,182,164, 0.3); */
@@ -69,7 +77,7 @@
     /* -moz-box-shadow: 0 2px 12px rgba(0,0,0,.5); */
     box-shadow: 0 1px 2px #000;
     transform: rotate(-0.5deg);
-    font-size: 9px;
+    font-size: 8px;
   }
   
   
@@ -91,14 +99,8 @@
   
   
   
-  .post-contents {
-    padding-top: 25px;
-    height: 100%;
-    width: 100%;
-    font-family: "Helvetica";
-    color: #849376;
-    font-weight: 650;
-  
+  .post-content {
+    margin: 0px;
   }
   
   .post-title a{

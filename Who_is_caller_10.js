@@ -1,7 +1,8 @@
 
 var posts = document.getElementsByClassName("caller-avatar-default");
 var callingAvatar = document.getElementById("caller-avatar-calling");
-// console.log (callingAvatar.innerHTML)
+// console.log(callingAvatar)
+console.log (callingAvatar.innerHTML)
 // console.log(posts[Math.floor(Math.random() * (posts.length))])
 // console.log(Math.floor(Math.random() * (posts.length)));
 
@@ -23,6 +24,7 @@ function displayCallingAvatar (){
     }
     currcaller.classList.remove("caller-avatar-default");
     originalAvatar = currcaller.innerHTML
+    console.log(originalAvatar)
     currcaller.innerHTML = callingAvatar.innerHTML
     currcaller.classList.add("calling-avatar");
     console.log(posts.length)
@@ -42,11 +44,4 @@ function revertAvatar (){
     }
 }
 
-// while (posts.length > 0) {
-//     var currcaller = posts[Math.floor(Math.random() * (posts.length))]
-//     currcaller.classList.remove("caller-avatar-default");
-    
-//     currcaller.classList.add("caller-avatar-called");
-//     var posts = document.getElementsByClassName("caller-avatar-default");
-//     console.log(posts.length)
-// }
+console.log(callerNumber10)
