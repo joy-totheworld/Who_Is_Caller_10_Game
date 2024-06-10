@@ -47,6 +47,9 @@
   }
   
   #posts{
+    top: 65px;
+    bottom: 0;
+    position: fixed;
     padding-top: 10px;
     padding-bottom: 0px;
     display: flex;
@@ -527,7 +530,7 @@
   
   #modal-backdrop {
     position: fixed;
-    top: 0;
+    top: 65px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -535,36 +538,68 @@
     background-color: rgba(0, 0, 0, 0.85);
   }
   
-  #post-activity-modal {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1010;
-    /* overflow: scroll; */
+  button {
+    z-index: 5000;
+    height: 36px;
+    width: 150px;
+    font-size: 28px;
+    color: #6BAA75;
+    background-color: rgba(255, 255, 255);
+    border: 1px solid rgb(171,180,155, .7);
+    border-radius: 5px;
+    font-weight: lighter;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px #c3b6a4;
+    margin: 0;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  button:hover {
+    border: 2px solid #6BAA75;
+    box-shadow: 1px 1px 3px #6BAA75;
+    height: 38px;
+    width: 152px;
+    color: #6baa76d2;
+    ;
+  }
+
+  input {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .modal-dialog > p {
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    -ms-transform: translate(-30%, -30%);
+    transform: translate(-30%, -30%);
+    color: #525252;
+    font-family: 14px;
   }
   
-  
-  /* .hidden {
-    display: none;
-  } */
-  
   .modal-dialog {
+    position: fixed;
     width: auto;
-    max-width: 600px;
-    min-width: 350px;
+    width: 70%;
     min-height: 300px;
-    max-height: 95%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     background-color: #fff;
     border-radius: 30px;
     background-color: #fbfbf3;
     padding: 0px;
-  
+    z-index: 4000;
   }
   
   .modal-header {
@@ -709,10 +744,13 @@
   
   
   header {
+    height: 65px;
     background-color: #849376;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    z-index: 6000;
+    font-size: 8px;
   }
   
   /* 
@@ -722,19 +760,13 @@
     margin: 0;
   } */
   
-  .header-image-container,
+  .header-ascii-container,
   .page-link {
     cursor: pointer;
     display: block;
+    z-index: 6000;
   }
-  
-  .header-image {
-    max-width: 600px;
-    max-height: 60px;
-    margin: auto;
-    margin-top: 10px;
-    display: block;
-  }
+
   
   .page-link {
     padding: 0px 15px;

@@ -14,7 +14,7 @@
 
     <header>
 
-      <div class="header-image-container">
+      <div class="header-ascii-container">
         <pre>
              __        ___             ___        ____      _ _             _   _                 _                 _  ___ ___ 
              \ \      / / |__   ___   |_ _|___   / ___|__ _| | | ___ _ __  | \ | |_   _ _ __ ___ | |__   ___ _ __  / |/ _ \__ \     
@@ -27,6 +27,21 @@
 
     <main class="content">
 
+        <div id="modal-backdrop">
+        </div>
+        <div class="modal-dialog" id="modal">
+            <p id="modal-text"> Bears are trying to win a radio contest, where the tenth caller gets a jar of honey. 🍯<br>
+                Watch and see if you can catch who the winner will be!<br>
+                <br>
+                Try to enter the alphabet identifer of the winning bear when they are done calling.<br>
+                Who knows, they may be willing to share. 
+            </p>
+            <button id="start-button">Start</button>
+            <input id="answer-input" type="text" class = "hidden"></input>
+            <button id="submit-button" class = "hidden">Submit</button>
+
+        </div>
+        
         <div id="game-modal">
             <button id="start-button" class="hidden">Start</button>
             <button id="next-button" class="hidden">Next</button>
@@ -45,8 +60,8 @@
                     </pre>
                -->
                 <!-- credit for bear ascii art: https://www.textartcopy.com/simple-text-art.html -->
-                <div class="post" id="caller-a">
-                    <pre class="post-content caller-avatar-default">
+                <div class="post" >
+                    <pre class="post-content caller-avatar-default" id="caller-a">
 ───▄▀▀▀▄▄▄▄▄▄▄▀▀▀▄───
 ───█▒▒░░░░░░░░░▒▒█───
 ────█░░█░░░░░█░░█────
